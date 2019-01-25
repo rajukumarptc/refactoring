@@ -20,4 +20,8 @@ public class Movie {
     public String getTitle (){
         return _title;
     };
+
+    public Movie getMovie() {
+        return this;
+    }
 }

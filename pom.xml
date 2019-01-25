@@ -19,17 +19,17 @@
 
     <dependencies>
 
-        <!-- junit 5, unit test -->
+        <!-- junit 5, unit main.java.codingpractise.test -->
         <dependency>
-            <groupId>org.junit.jupiter</groupId>
-            <artifactId>junit-jupiter-engine</artifactId>
-            <version>5.3.1</version>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>4.12</version>
             <scope>test</scope>
         </dependency>
 
     </dependencies>
     <build>
-        <finalName>maven-unit-test</finalName>
+        <finalName>maven-unit-main.java.codingpractise.test</finalName>
         <plugins>
 
             <plugin>
