@@ -3,7 +3,6 @@ package com.codingpractise;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.junit.runners.JUnit4;
-import org.junit.runners.Suite;
 
 import static org.junit.Assert.assertEquals;
 
@@ -28,7 +27,7 @@ public class CustomerTest {
                 "\tBlack\t6.5\n" +
                 "Amount owed is 8.5\n" +
                 "You earned 2 frequent renter points";
-        String actualStatement = customer.statement() ;
+        String actualStatement = customer.htmlStatement() ;
         assertEquals(actualStatement, expectedStatement);
 
     }
@@ -44,7 +43,7 @@ public class CustomerTest {
                 "\t"+ childrenMovie2.getTitle() + "\t4.5\n" +
                 "Amount owed is 6.0\n" +
                 "You earned 2 frequent renter points";
-        String actualStatement = customer.statement() ;
+        String actualStatement = customer.htmlStatement() ;
         assertEquals(actualStatement, expectedStatement);
 
     }
@@ -60,7 +59,7 @@ public class CustomerTest {
                 "\t"+ newReleaseMovie2.getTitle() + "\t15.0\n" +
                 "Amount owed is 36.0\n" +
                 "You earned 4 frequent renter points";
-        String actualStatement = customer.statement() ;
+        String actualStatement = customer.htmlStatement() ;
         assertEquals(actualStatement, expectedStatement);
 
     }
@@ -78,7 +77,7 @@ public class CustomerTest {
                 "\t"+ childrenMovie2.getTitle() + "\t4.5\n" +
                 "Amount owed is 32.0\n" +
                 "You earned 4 frequent renter points";
-        String actualStatement = customer.statement() ;
+        String actualStatement = customer.htmlStatement() ;
         assertEquals(actualStatement, expectedStatement);
 
     }
